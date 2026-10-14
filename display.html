@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review your verified name, email address, and summary.">
+  <title>Your result | Clear Choices</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="display.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="About.html">Clear Choices</a>
+      <span class="step-label">YOUR RESULT</span>
+    </header>
+
+    <section class="card">
+      <p class="eyebrow">Step 3 of 3</p>
+      <h1>Your submission</h1>
+      <p class="intro">Your name and email passed verification. Here are the details you submitted.</p>
+
+      <p class="notice" id="missing-result" role="status" hidden>
+        There is no verified submission in this browser tab. Please complete the test first.
+        <a href="test.html">Go to the test</a>.
+      </p>
+      <dl class="result-list" id="result" hidden>
+        <div>
+          <dt>Name</dt>
+          <dd id="result-name"></dd>
+        </div>
+        <div>
+          <dt>Email</dt>
+          <dd id="result-email"></dd>
+        </div>
+        <div>
+          <dt>Summary</dt>
+          <dd class="summary-text" id="result-summary"></dd>
+        </div>
+      </dl>
+      <a class="button button-secondary" href="About.html">Back to About</a>
+    </section>
+    <footer>Your verified details are stored only for this browser tab.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Write a summary of the project guide and submit your details for verification.">
+  <title>Write your summary | Clear Choices</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="test.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="About.html">Clear Choices</a>
+      <span class="step-label">YOUR TURN</span>
+    </header>
+
+    <section class="card">
+      <p class="eyebrow">Step 2 of 3</p>
+      <h1>What stood out to you?</h1>
+      <p class="intro">Summarise the ideas from the <a href="About.html">About page</a> in your own words. Your name and Gmail address will be checked before the result is shown.</p>
+
+      <p class="notice" id="form-error" role="alert" hidden></p>
+
+      <form action="Verify.jsp" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" maxlength="9" autocomplete="name" required>
+        <small>Start with a capital letter and use fewer than 10 characters.</small>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <small>Use an address ending in @gmail.com.</small>
+
+        <label for="summary">Your summary</label>
+        <textarea id="summary" name="summary" rows="7" required></textarea>
+
+        <button class="button" type="submit">Verify and view result <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+    <footer>Your submission is kept in this browser tab for the result page.</footer>
+  </main>
+</body>
+</html>
